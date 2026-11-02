@@ -1,0 +1,251 @@
+
+/* General Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fb;
+    color: #263445;
+    line-height: 1.6;
+}
+
+/* Main Container */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Header */
+
+.header {
+    background-color: #19376d;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 16px;
+}
+
+/* Introduction */
+
+.intro {
+    text-align: center;
+    padding: 35px 10px;
+}
+
+.intro h2 {
+    color: #19376d;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Calculator Section */
+
+.calculator {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.calculator h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #19376d;
+}
+
+/* Input Fields */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #19376d;
+    box-shadow: 0 0 0 2px rgba(25, 55, 109, 0.12);
+}
+
+/* Buttons */
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.button-group button {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.calculate-btn {
+    background-color: #19376d;
+    color: white;
+}
+
+.calculate-btn:hover {
+    background-color: #254d91;
+}
+
+.reset-btn {
+    background-color: #e2e8f0;
+    color: #263445;
+}
+
+.reset-btn:hover {
+    background-color: #cbd5e1;
+}
+
+/* Error Message */
+
+.error-message {
+    color: #dc2626;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Results Section */
+
+.results {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.results h2 {
+    text-align: center;
+    color: #19376d;
+    margin-bottom: 25px;
+}
+
+/* Result Cards */
+
+.result-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.result-card {
+    flex: 1 1 200px;
+    background-color: #edf3fc;
+    padding: 22px 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.result-card h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.result-card p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #19376d;
+}
+
+/* Result Message */
+
+.message-result {
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.note {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #64748b;
+    text-align: center;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #19376d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    .header h1 {
+        font-size: 29px;
+    }
+
+    .calculator {
+        padding: 20px;
+    }
+
+    .results {
+        padding: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .result-card {
+        flex-basis: 100%;
+    }
+
+}
+/* Attendance Status Colours */
+
+.status-eligible {
+    color: #16a34a !important;
+}
+
+.status-below {
+    color: #dc2626 !important;
+}
